@@ -535,6 +535,7 @@
 				DB3FE0DB1B4B52BB00FDDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		DB3FE0DC1B4B52BB00FDDF39 /* Build configuration list for PBXNativeTarget "MyChatTests" */ = {
 			isa = XCConfigurationList;
@@ -543,6 +544,7 @@
 				DB3FE0DE1B4B52BB00FDDF39 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
