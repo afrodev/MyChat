@@ -34,7 +34,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.messagesTextField.delegate = self
         
         
-        
         self.retrieveMessages()
         
         var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("retrieveMessages"), userInfo: nil, repeats: true)
@@ -135,9 +134,17 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             }
             
             dispatch_async(dispatch_get_main_queue() ){
+                //Atualiza a table view
                 self.messageTableView.reloadData()
+
+                //Coloca para baixo
+                self.messageTableView.scrollToRowAtIndexPath(NSIndexPath(forRow: self.messagesArray.count - 1, inSection: 0), atScrollPosition: .Bottom, animated: true)
             }
         }
+        
+        //messageTableView.setContentOffset(CGPointZero, animated:true)
+        messageTableView.alwaysBounceVertical = true;
+
         
     }
     

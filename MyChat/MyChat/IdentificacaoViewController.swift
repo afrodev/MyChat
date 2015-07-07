@@ -45,8 +45,10 @@ class IdentificacaoViewController: UIViewController, UITextFieldDelegate {
             
         } else {
             Singleton.sharedInstance.name = self.txtNome.text
-            let vc:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("ChatViewController")
-            self.presentViewController(vc as! UIViewController , animated: true, completion: nil)
+            performSegueWithIdentifier("segueChat", sender: sender)
+            
+//            let vc:AnyObject? = self.storyboard?.instantiateViewControllerWithIdentifier("ChatViewController")
+//            self.presentViewController(vc as! UIViewController , animated: true, completion: nil)
             
         }
         
