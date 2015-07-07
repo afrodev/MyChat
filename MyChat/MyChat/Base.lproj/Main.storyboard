@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="PGD-KY-WIH">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Fje-Hx-eGb">
+            <objects>
+                <navigationController storyboardIdentifier="ChatViewController" id="yH5-C3-0it" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="x6t-2n-R0u">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <toolbar key="toolbar" opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="7tw-WT-7eB">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </toolbar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="eH3-Ej-5Sq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cF4-xT-rBf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="16.5" y="-107.5"/>
+        </scene>
+        <!--Identificacao View Controller-->
+        <scene sceneID="JpQ-cz-c9e">
+            <objects>
+                <viewController id="PGD-KY-WIH" customClass="IdentificacaoViewController" customModule="MyChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MSC-yu-Wlq"/>
+                        <viewControllerLayoutGuide type="bottom" id="o16-OG-nAi"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="iH4-pa-Tbg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Digite seu nome:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="m5W-SK-zVk">
+                                <rect key="frame" x="123" y="221" width="129" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Digite seu nome no chat" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6Ey-Tw-U7P">
+                                <rect key="frame" x="54" y="319" width="267" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="SOE-Bf-7xN"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TQM-Cj-emc">
+                                <rect key="frame" x="117" y="440" width="141" height="30"/>
+                                <state key="normal" title="Entrar no chat doido">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickEntrar:" destination="PGD-KY-WIH" eventType="touchUpInside" id="BAH-jK-wkN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="TQM-Cj-emc" firstAttribute="top" secondItem="6Ey-Tw-U7P" secondAttribute="bottom" constant="91" id="5vx-Ud-3dl"/>
+                            <constraint firstItem="o16-OG-nAi" firstAttribute="top" secondItem="TQM-Cj-emc" secondAttribute="bottom" constant="197" id="Lm3-Fv-SqO"/>
+                            <constraint firstItem="6Ey-Tw-U7P" firstAttribute="top" secondItem="m5W-SK-zVk" secondAttribute="bottom" constant="77" id="Lx3-5T-5em"/>
+                            <constraint firstItem="TQM-Cj-emc" firstAttribute="leading" secondItem="iH4-pa-Tbg" secondAttribute="leadingMargin" constant="101" id="RgO-UZ-dW8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="m5W-SK-zVk" secondAttribute="trailing" constant="107" id="UCz-3j-sKO"/>
+                            <constraint firstItem="m5W-SK-zVk" firstAttribute="leading" secondItem="iH4-pa-Tbg" secondAttribute="leadingMargin" constant="107" id="cqR-zE-X7G"/>
+                            <constraint firstItem="6Ey-Tw-U7P" firstAttribute="leading" secondItem="iH4-pa-Tbg" secondAttribute="leadingMargin" constant="38" id="hF7-Kv-TfA"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="6Ey-Tw-U7P" secondAttribute="trailing" constant="38" id="rT8-fj-sJz"/>
+                            <constraint firstItem="m5W-SK-zVk" firstAttribute="top" secondItem="MSC-yu-Wlq" secondAttribute="bottom" constant="201" id="vBp-hP-Sli"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="TQM-Cj-emc" secondAttribute="trailing" constant="101" id="xf3-mb-qF7"/>
+                        </constraints>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="txtNome" destination="6Ey-Tw-U7P" id="1ef-c1-4tK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IFJ-qZ-zLT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-258.5" y="680.5"/>
+        </scene>
+        <!--Chat Doido-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyChat" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="l2a-Qx-2fr">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="609"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="MessageCell" id="ReC-0c-6th">
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ReC-0c-6th" id="ICJ-yj-myh">
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nz6-nd-MGG">
+                                <rect key="frame" x="0.0" y="607" width="375" height="60"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NXB-5Q-F5o">
+                                        <rect key="frame" x="8" y="15" width="302" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="302" id="umi-TC-TMk"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FTC-kk-hfK">
+                                        <rect key="frame" x="324" y="15" width="43" height="30"/>
+                                        <state key="normal" title="Enviar">
+                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="clickEnviar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4iM-pq-Ecu"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="NXB-5Q-F5o" firstAttribute="top" secondItem="FTC-kk-hfK" secondAttribute="top" id="BpZ-rS-e54"/>
+                                    <constraint firstItem="FTC-kk-hfK" firstAttribute="leading" secondItem="NXB-5Q-F5o" secondAttribute="trailing" constant="14" id="GfN-oP-fSr"/>
+                                    <constraint firstItem="NXB-5Q-F5o" firstAttribute="leading" secondItem="Nz6-nd-MGG" secondAttribute="leadingMargin" id="ISc-V5-FW3"/>
+                                    <constraint firstItem="NXB-5Q-F5o" firstAttribute="centerY" secondItem="Nz6-nd-MGG" secondAttribute="centerY" id="ifQ-No-qJJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Nz6-nd-MGG" firstAttribute="leading" secondItem="l2a-Qx-2fr" secondAttribute="leading" id="9wI-HH-bYV"/>
+                            <constraint firstItem="l2a-Qx-2fr" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="IPI-zc-cT3"/>
+                            <constraint firstItem="Nz6-nd-MGG" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="IYO-c6-dMn"/>
+                            <constraint firstItem="Nz6-nd-MGG" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="LwG-fG-rlg"/>
+                            <constraint firstItem="Nz6-nd-MGG" firstAttribute="trailing" secondItem="l2a-Qx-2fr" secondAttribute="trailing" id="ZTz-jF-HYx"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="l2a-Qx-2fr" secondAttribute="bottom" constant="58" id="aiM-G4-icr"/>
+                            <constraint firstAttribute="trailing" secondItem="Nz6-nd-MGG" secondAttribute="trailing" id="jXh-Fg-Kh9"/>
+                            <constraint firstItem="Nz6-nd-MGG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="543" id="voI-jL-HvC"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Chat Doido" id="He5-wf-IFw"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="btnSend" destination="FTC-kk-hfK" id="Xrr-h7-kDt"/>
+                        <outlet property="messageTableView" destination="l2a-Qx-2fr" id="MdS-bB-r37"/>
+                        <outlet property="messagesTextField" destination="NXB-5Q-F5o" id="Z6a-Qm-tyH"/>
+                        <outlet property="viewSend" destination="Nz6-nd-MGG" id="SX4-76-1v6"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
