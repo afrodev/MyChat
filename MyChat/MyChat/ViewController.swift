@@ -36,7 +36,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         self.retrieveMessages()
         
-        var timer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("retrieveMessages"), userInfo: nil, repeats: true)
+        _ = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: Selector("retrieveMessages"), userInfo: nil, repeats: true)
     }
 
     override func didReceiveMemoryWarning() {
@@ -50,7 +50,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     }
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.messagesTextField.resignFirstResponder()
     }
     
@@ -58,14 +58,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         //Cria a celula
-        let cell = self.messageTableView.dequeueReusableCellWithIdentifier("MessageCell") as! UITableViewCell
+        let cell = self.messageTableView.dequeueReusableCellWithIdentifier("MessageCell") as UITableViewCell?
         
         
         // Altera a célula
-        cell.textLabel?.text = self.messagesArray[indexPath.row]
+        cell!.textLabel?.text = self.messagesArray[indexPath.row]
         
         //Retorna a celula
-        return cell
+        return cell!
         
     }
     
@@ -83,13 +83,13 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         
         //Envia para o banco
-        var newMessageObject:PFObject = PFObject(className: "Message")
-        newMessageObject["Text"] = Singleton.sharedInstance.name + ": " + self.messagesTextField.text
+       let newMessageObject:PFObject = PFObject(className: "Message")
+        newMessageObject["Text"] = Singleton.sharedInstance.name + ": " + self.messagesTextField.text!
         
         newMessageObject.saveInBackgroundWithBlock { (success, error) -> Void in
             
             if (success) {
-                println("Mensagem foi inserida")
+                print("Mensagem foi inserida")
                 
                 
                 
@@ -104,7 +104,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
                 
                 
             }else{
-                println("Mensagem foi NAO inserida")
+                print("Mensagem foi NAO inserida")
                
             }
             
@@ -120,7 +120,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func retrieveMessages()
     {
-        var query:PFQuery = PFQuery(className: "Message")
+        let query:PFQuery = PFQuery(className: "Message")
         
         query.findObjectsInBackgroundWithBlock { (objects, error) -> Void in
             self.messagesArray = [String]()
@@ -159,8 +159,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     
     func animateViewMoving (up:Bool, moveValue :CGFloat){
-        var movementDuration:NSTimeInterval = 0.3
-        var movement:CGFloat = ( up ? -moveValue : moveValue)
+        let movementDuration:NSTimeInterval = 0.3
+        let movement:CGFloat = ( up ? -moveValue : moveValue)
         UIView.beginAnimations( "animateView", context: nil)
         UIView.setAnimationBeginsFromCurrentState(true)
         UIView.setAnimationDuration(movementDuration )

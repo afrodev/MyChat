@@ -24,7 +24,7 @@ class IdentificacaoViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    override func touchesBegan(touches: Set<NSObject>, withEvent event: UIEvent) {
+    override func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
         self.txtNome.resignFirstResponder()
     }
     
@@ -37,7 +37,7 @@ class IdentificacaoViewController: UIViewController, UITextFieldDelegate {
     
     @IBAction func clickEntrar(sender: AnyObject) {
         if (txtNome.text == nil || txtNome.text == "") {
-            var alertController = UIAlertController(title: "Digite um nome carai!", message: "Não foi colocado um nome", preferredStyle: UIAlertControllerStyle.Alert)
+            let alertController = UIAlertController(title: "Digite um nome carai!", message: "Não foi colocado um nome", preferredStyle: UIAlertControllerStyle.Alert)
             
             alertController.addAction(UIAlertAction(title: "OK", style: UIAlertActionStyle.Cancel, handler: nil))
             

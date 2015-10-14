@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB36FCB41BCEFA80008ABD2C /* libsqlite3.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB36FCB31BCEFA80008ABD2C /* libsqlite3.tbd */; };
+		DB36FCB61BCEFA8D008ABD2C /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = DB36FCB51BCEFA8D008ABD2C /* libz.tbd */; };
 		DB3FE0C01B4B52BB00FDDF39 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FE0BF1B4B52BB00FDDF39 /* AppDelegate.swift */; };
 		DB3FE0C21B4B52BB00FDDF39 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB3FE0C11B4B52BB00FDDF39 /* ViewController.swift */; };
 		DB3FE0C51B4B52BB00FDDF39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB3FE0C31B4B52BB00FDDF39 /* Main.storyboard */; };
@@ -23,8 +25,6 @@
 		DB3FE11A1B4B561100FDDF39 /* CFNetwork.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE10F1B4B561100FDDF39 /* CFNetwork.framework */; };
 		DB3FE11B1B4B561100FDDF39 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1101B4B561100FDDF39 /* CoreGraphics.framework */; };
 		DB3FE11C1B4B561100FDDF39 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1111B4B561100FDDF39 /* CoreLocation.framework */; };
-		DB3FE11D1B4B561100FDDF39 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1121B4B561100FDDF39 /* libsqlite3.dylib */; };
-		DB3FE11E1B4B561100FDDF39 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1131B4B561100FDDF39 /* libz.dylib */; };
 		DB3FE11F1B4B561100FDDF39 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1141B4B561100FDDF39 /* MobileCoreServices.framework */; };
 		DB3FE1201B4B561100FDDF39 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1151B4B561100FDDF39 /* QuartzCore.framework */; };
 		DB3FE1211B4B561100FDDF39 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB3FE1161B4B561100FDDF39 /* Security.framework */; };
@@ -46,6 +46,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		DB36FCB31BCEFA80008ABD2C /* libsqlite3.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libsqlite3.tbd; path = usr/lib/libsqlite3.tbd; sourceTree = SDKROOT; };
+		DB36FCB51BCEFA8D008ABD2C /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		DB3FE0BA1B4B52BA00FDDF39 /* MyChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB3FE0BE1B4B52BB00FDDF39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB3FE0BF1B4B52BB00FDDF39 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -66,8 +68,6 @@
 		DB3FE10F1B4B561100FDDF39 /* CFNetwork.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CFNetwork.framework; path = System/Library/Frameworks/CFNetwork.framework; sourceTree = SDKROOT; };
 		DB3FE1101B4B561100FDDF39 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		DB3FE1111B4B561100FDDF39 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		DB3FE1121B4B561100FDDF39 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
-		DB3FE1131B4B561100FDDF39 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
 		DB3FE1141B4B561100FDDF39 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		DB3FE1151B4B561100FDDF39 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		DB3FE1161B4B561100FDDF39 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
@@ -83,12 +83,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB36FCB61BCEFA8D008ABD2C /* libz.tbd in Frameworks */,
+				DB36FCB41BCEFA80008ABD2C /* libsqlite3.tbd in Frameworks */,
 				DB3FE1191B4B561100FDDF39 /* AudioToolbox.framework in Frameworks */,
 				DB3FE11A1B4B561100FDDF39 /* CFNetwork.framework in Frameworks */,
 				DB3FE11B1B4B561100FDDF39 /* CoreGraphics.framework in Frameworks */,
 				DB3FE11C1B4B561100FDDF39 /* CoreLocation.framework in Frameworks */,
-				DB3FE11D1B4B561100FDDF39 /* libsqlite3.dylib in Frameworks */,
-				DB3FE11E1B4B561100FDDF39 /* libz.dylib in Frameworks */,
 				DB3FE11F1B4B561100FDDF39 /* MobileCoreServices.framework in Frameworks */,
 				DB3FE1201B4B561100FDDF39 /* QuartzCore.framework in Frameworks */,
 				DB3FE1211B4B561100FDDF39 /* Security.framework in Frameworks */,
@@ -176,14 +176,14 @@
 		DB3FE0EB1B4B530800FDDF39 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				DB36FCB51BCEFA8D008ABD2C /* libz.tbd */,
+				DB36FCB31BCEFA80008ABD2C /* libsqlite3.tbd */,
 				DB3FE1291B4C26CF00FDDF39 /* Fabric.framework */,
 				DB3FE12A1B4C26CF00FDDF39 /* Crashlytics.framework */,
 				DB3FE10E1B4B561100FDDF39 /* AudioToolbox.framework */,
 				DB3FE10F1B4B561100FDDF39 /* CFNetwork.framework */,
 				DB3FE1101B4B561100FDDF39 /* CoreGraphics.framework */,
 				DB3FE1111B4B561100FDDF39 /* CoreLocation.framework */,
-				DB3FE1121B4B561100FDDF39 /* libsqlite3.dylib */,
-				DB3FE1131B4B561100FDDF39 /* libz.dylib */,
 				DB3FE1141B4B561100FDDF39 /* MobileCoreServices.framework */,
 				DB3FE1151B4B561100FDDF39 /* QuartzCore.framework */,
 				DB3FE1161B4B561100FDDF39 /* Security.framework */,
@@ -244,7 +244,8 @@
 		DB3FE0B21B4B52BA00FDDF39 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0640;
+				LastSwiftMigration = 0700;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Humberto Vieira de Castro";
 				TargetAttributes = {
 					DB3FE0B91B4B52BA00FDDF39 = {
@@ -388,6 +389,7 @@
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
@@ -454,6 +456,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyChat",
@@ -461,6 +464,7 @@
 				);
 				INFOPLIST_FILE = MyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.betovieira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -470,6 +474,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/MyChat",
@@ -477,6 +482,7 @@
 				);
 				INFOPLIST_FILE = MyChat/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.betovieira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -496,6 +502,7 @@
 				);
 				INFOPLIST_FILE = MyChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.betovieira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyChat.app/MyChat";
 			};
@@ -511,6 +518,7 @@
 				);
 				INFOPLIST_FILE = MyChatTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "br.com.betovieira.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyChat.app/MyChat";
 			};
